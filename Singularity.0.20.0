@@ -6,8 +6,8 @@ Maintainer eric.burgueno@plantandfood.co.nz
 Version 0.20.0
 
 %environment
- PATH=/Bismark-0.20.0:$PATH
- export PATH
+  PATH=/Bismark-0.20.0:$PATH
+  export PATH
 
 %post
   ## Download prerequisites
@@ -25,4 +25,4 @@ Version 0.20.0
   rm -rf /0.20.0.tar.gz
 
 %runscript
-bismark "$@"
+  exec bismark "$@"
